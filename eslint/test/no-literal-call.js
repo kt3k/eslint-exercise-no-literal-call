@@ -24,7 +24,7 @@ tester.run("no-literal-call", require("../rule/no-literal-call"), {
     {
       code: "(class A {})();",
       env: { es6: true },
-      errors: ["Class constructors cannot be invoked without 'new'"],
+      errors: ["Class constructors cannot be invoked without 'new'."],
     },
   ],
 });
